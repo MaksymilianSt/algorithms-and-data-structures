@@ -1,10 +1,10 @@
-package Algorithms.BinarySearch;
+package Algorithms.Search;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class BinarySearch {
     public static void main(String[] args) {
         //test                                                      0    1  2     3       4
         ArrayList<String> strings = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "z"));

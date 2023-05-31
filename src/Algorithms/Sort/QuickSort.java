@@ -1,10 +1,10 @@
-package Algorithms.QuickSort;
+package Algorithms.Sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class QuickSort {
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>(Arrays.asList(1, 2, 3,21, 4, 5));
         System.out.println(ileSzotów(1000,100));
