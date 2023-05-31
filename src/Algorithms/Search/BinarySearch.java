@@ -18,6 +18,9 @@ public class BinarySearch {
      * @param toSearch element we' re looking for
      * @param <T>      Takes any comparable element
      * @return index of found element, or -1 if element does not exist
+     * W (len) = Θ(log2(len))
+     * A(len) = Θ(log2(len))
+     * S(len) = O(1)
      */
     public static <T extends Comparable> int binarySearch(List<T> source, T toSearch) {
         int min = 0;

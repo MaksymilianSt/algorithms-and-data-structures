@@ -12,6 +12,10 @@ public class SelectionSort {
         System.out.println("result : ");
         System.out.println(Arrays.stream(tab).mapToObj(e -> e + "").collect(Collectors.joining(",")));
     }
+
+    /**
+     *  W(len) = Θ((len)^2)
+     */
     static void selectionSort(int[] tab){
         int i = 0;
         while(i < tab.length-1 ){
