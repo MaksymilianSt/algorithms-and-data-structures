@@ -24,9 +24,7 @@ public class SimpleStack <T> {
     private void doubleStackArray(){
        stack = Arrays.copyOf(stack,stack.length * 2);
     }
-    public void show(){
-        Arrays.stream(stack).forEach(System.out::println);
-    }
+
 
 
 }
