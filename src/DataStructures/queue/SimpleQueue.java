@@ -15,6 +15,8 @@ public class SimpleQueue <T> {
 
     }
     public T deQueue(){
+        if(size <= 0)
+            throw new IndexOutOfBoundsException("there are no more elements ");
         T data = (T) queue[front++];
         size--;
         return data;
