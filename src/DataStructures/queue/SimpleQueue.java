@@ -21,6 +21,11 @@ public class SimpleQueue <T> {
         size--;
         return data;
     }
+    public void info(){
+        for (int i = front; i <rear ; i++) {
+            System.out.print(queue[i] + " , ");
+        }
+    }
     private void doubleQueueSize(){
        queue =  Arrays.copyOf(queue ,queue.length*2);
     }
