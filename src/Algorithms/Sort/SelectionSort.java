@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class SelectionSort {
+
     public static void main(String[] args) {
         int[] tab = {3,52,1,5,2,4,9};
         tab = new int[]{6,3,1,0,2,5,4,7};
