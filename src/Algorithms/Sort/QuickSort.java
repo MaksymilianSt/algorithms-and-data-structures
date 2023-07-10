@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class QuickSort {
-    private int partition(int arr[], int begin, int end) {
+    private static int partition(int arr[], int begin, int end) {
         int pivot = arr[end];
         int i = (begin-1);
 
@@ -24,6 +24,14 @@ public class QuickSort {
         arr[end] = swapTemp;
 
         return i+1;
+    }
+    public void quickSort(int arr[], int begin, int end) {
+        if (begin < end) {
+            int pivotIndex = partition(arr, begin, end);
+
+            quickSort(arr, begin, pivotIndex-1);
+            quickSort(arr, pivotIndex+1, end);
+        }
     }
     public static void main(String[] args)  {
 
