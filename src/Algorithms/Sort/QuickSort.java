@@ -4,6 +4,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class QuickSort {
     private static int partition(int arr[], int begin, int end) {
@@ -25,7 +26,10 @@ public class QuickSort {
 
         return i+1;
     }
-    public void quickSort(int arr[], int begin, int end) {
+    public static void quickSort(int arr[]){
+        quickSort(arr,0,arr.length-1);
+    }
+    private static void  quickSort(int arr[], int begin, int end) {
         if (begin < end) {
             int pivotIndex = partition(arr, begin, end);
 
@@ -34,6 +38,8 @@ public class QuickSort {
         }
     }
     public static void main(String[] args)  {
-
+        int [] a = {1,78,432,2,1,43,32};
+        quickSort(a);
+        Arrays.stream(a).forEach(System.out::println);
     }
 }
