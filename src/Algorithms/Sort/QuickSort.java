@@ -38,8 +38,6 @@ public class QuickSort {
         }
     }
     public static void main(String[] args)  {
-        int [] a = {1,78,432,2,1,43,32};
-        quickSort(a);
-        Arrays.stream(a).forEach(System.out::println);
+        
     }
 }
